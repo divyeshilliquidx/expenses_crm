@@ -1,0 +1,29 @@
+<?xml version='1.0'?>
+                                                                                    <schema>
+                                                                                          <tables>
+                                                                                                <table>
+                                                                                                      <name>vtiger_sharedperson</name>
+                                                                                                      <sql><![CDATA[CREATE TABLE `vtiger_sharedperson` (
+                                                                                        `sharedpersonid` int(11) NOT NULL DEFAULT '0',
+                                                                                          `shared_person` varchar(255) DEFAULT NULL,
+                                                                                          PRIMARY KEY (`sharedpersonid`)
+                                                                                      ) ENGINE=InnoDB DEFAULT CHARSET=utf8]]></sql>
+                                                                                                </table>
+                                                                                                <table>
+                                                                                                      <name>vtiger_sharedpersoncf</name>
+                                                                                                      <sql><![CDATA[CREATE TABLE `vtiger_sharedpersoncf` (
+                                                                                      `sharedpersonid` int(11) NOT NULL,
+                                                                                      PRIMARY KEY (`sharedpersonid`)
+                                                                                    ) ENGINE=InnoDB DEFAULT CHARSET=utf8]]></sql>
+                                                                                                </table>
+                                                                                                <table>
+                                                                                                      <name>vtiger_sharedperson_user_field</name>
+                                                                                                      <sql><![CDATA[CREATE TABLE IF NOT EXISTS `vtiger_sharedperson_user_field` (
+                                                                                                      `recordid` int(25) NOT NULL,
+                                                                                                      `userid` int(25) NOT NULL,
+                                                                                                      `starred` varchar(100) DEFAULT NULL,
+                                                                                                      KEY `fk_sharedpersonid_vtiger_sharedperson_user_field` (`recordid`)
+                                                                                                      ) ENGINE=InnoDB DEFAULT CHARSET=utf8]]></sql>
+                                                                                          </table>
+                                                                                          </tables>
+                                                                                    </schema>

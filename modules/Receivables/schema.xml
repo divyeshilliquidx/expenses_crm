@@ -1,0 +1,29 @@
+<?xml version='1.0'?>
+                                                                                    <schema>
+                                                                                          <tables>
+                                                                                                <table>
+                                                                                                      <name>vtiger_receivables</name>
+                                                                                                      <sql><![CDATA[CREATE TABLE `vtiger_receivables` (
+                                                                                        `receivablesid` int(11) NOT NULL DEFAULT '0',
+                                                                                          `person_name` varchar(255) DEFAULT NULL,
+                                                                                          PRIMARY KEY (`receivablesid`)
+                                                                                      ) ENGINE=InnoDB DEFAULT CHARSET=utf8]]></sql>
+                                                                                                </table>
+                                                                                                <table>
+                                                                                                      <name>vtiger_receivablescf</name>
+                                                                                                      <sql><![CDATA[CREATE TABLE `vtiger_receivablescf` (
+                                                                                      `receivablesid` int(11) NOT NULL,
+                                                                                      PRIMARY KEY (`receivablesid`)
+                                                                                    ) ENGINE=InnoDB DEFAULT CHARSET=utf8]]></sql>
+                                                                                                </table>
+                                                                                                <table>
+                                                                                                      <name>vtiger_receivables_user_field</name>
+                                                                                                      <sql><![CDATA[CREATE TABLE IF NOT EXISTS `vtiger_receivables_user_field` (
+                                                                                                      `recordid` int(25) NOT NULL,
+                                                                                                      `userid` int(25) NOT NULL,
+                                                                                                      `starred` varchar(100) DEFAULT NULL,
+                                                                                                      KEY `fk_receivablesid_vtiger_receivables_user_field` (`recordid`)
+                                                                                                      ) ENGINE=InnoDB DEFAULT CHARSET=utf8]]></sql>
+                                                                                          </table>
+                                                                                          </tables>
+                                                                                    </schema>
