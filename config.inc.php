@@ -48,7 +48,7 @@ $dbconfig['db_server'] = 'localhost';
 $dbconfig['db_port'] = ':3306';
 $dbconfig['db_username'] = 'root';
 $dbconfig['db_password'] = '';
-$dbconfig['db_name'] = 'vtigercrm75_1';
+$dbconfig['db_name'] = 'expenses_crm';
 $dbconfig['db_type'] = 'mysqli';
 $dbconfig['db_status'] = 'true';
 
@@ -79,12 +79,12 @@ $dbconfigoption['ssl'] = false;
 
 $host_name = $dbconfig['db_hostname'];
 
-$site_URL = 'http://localhost/vtigercrm75_1/';
+$site_URL = 'http://localhost/expenses_crm/';
 
 // url for customer portal (Example: http://vtiger.com/portal)
 $PORTAL_URL = $site_URL.'/customerportal';
 // root directory path
-$root_directory = 'C:\xampp8.2\htdocs\vtigercrm75_1/';
+$root_directory = 'C:\xampp8.2\htdocs\expenses_crm/';
 
 // cache direcory path
 $cache_dir = 'cache/';

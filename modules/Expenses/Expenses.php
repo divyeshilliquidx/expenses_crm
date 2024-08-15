@@ -55,13 +55,11 @@ class Expenses extends Vtiger_CRMEntity
 //     [currentid] => 22746
 // )
 		$contactArray = array(
-			'Chirag' => 22728,
-			'Rahul ' => 22729,
-			'Krupali' => 22730,
-			'Hetal' => 22731,
-			'Chandra' => 22732,
+			'Gopi' => 22731,
+			'Rahul' => 22729,
 			'Divyesh' => 22739,
-			'Gopi' => 22754
+			'Krupali' => 22730,
+			'Chandra' => 22732,
 		);
 
 

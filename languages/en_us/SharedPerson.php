@@ -4,4 +4,6 @@ $languageStrings = array(
     'SINGLE_SharedPerson' => 'SharedPerson',
     'Shared Person' => 'Shared Person',
     'Create By' => 'Create By',
+    'Trip Status' => 'Trip Status',
+    'Trip Person List' => 'Trip Person List',
 );

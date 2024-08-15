@@ -10,7 +10,7 @@
 
 $patch_version = '20221124'; // -ve timestamp before release, +ve timestamp after release.
 $modified_database = '';
-$vtiger_current_version = rand(); //'7.5.0';
+$vtiger_current_version = '7.5.0'; //rand(); //;
 $_SESSION['vtiger_version'] = $vtiger_current_version;
 
 ?>
